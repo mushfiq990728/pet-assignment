@@ -1,14 +1,14 @@
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Outlet } from 'react-router-dom'; // Fixed: react-router-dom not react-router
 import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
 
 const Root = () => {
     return (
         <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-            <Footer></Footer>
+            <Navbar />
+            <Outlet />
+            <Footer />
         </div>
     );
 };
